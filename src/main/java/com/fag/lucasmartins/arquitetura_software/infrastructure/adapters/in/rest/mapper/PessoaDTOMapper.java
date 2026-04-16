@@ -7,13 +7,13 @@ public class PessoaDTOMapper {
     public PessoaDTOMapper() {}
 
     public static PessoaBO toBo(PessoaDTO pessoaDTO) {
-        return new PessoaBO(
-                pessoaDTO.getNomeCompleto(),
-                pessoaDTO.getCpf(),
-                pessoaDTO.getDataNascimento(),
-                pessoaDTO.getEmail(),
-                pessoaDTO.getTelefone()
-        );
+        PessoaBO bo = new PessoaBO();
+        bo.setNomeCompleto(pessoaDTO.getNomeCompleto());
+        bo.setCpf(pessoaDTO.getCpf());
+        bo.setDataNascimento(pessoaDTO.getDataNascimento());
+        bo.setEmail(pessoaDTO.getEmail());
+        bo.setTelefone(pessoaDTO.getTelefone());
+        return bo;
     }
 
     public static PessoaDTO toDto(PessoaBO pessoaBO) {

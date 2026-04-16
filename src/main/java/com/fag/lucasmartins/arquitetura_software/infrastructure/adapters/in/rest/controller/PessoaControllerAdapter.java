@@ -1,9 +1,9 @@
 package com.fag.lucasmartins.arquitetura_software.infrastructure.adapters.in.rest.controller;
 
 import com.fag.lucasmartins.arquitetura_software.application.ports.in.service.PessoaServicePort;
-import com.fag.lucasmartins.arquitetura_software.core.domain.bo.PessoaBO;
+
 import com.fag.lucasmartins.arquitetura_software.infrastructure.adapters.in.rest.dto.PessoaDTO;
-import com.fag.lucasmartins.arquitetura_software.infrastructure.adapters.in.rest.dto.ProdutoDTO;
+import com.fag.lucasmartins.arquitetura_software.core.domain.bo.PessoaBO;
 import com.fag.lucasmartins.arquitetura_software.infrastructure.adapters.in.rest.mapper.PessoaDTOMapper;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
